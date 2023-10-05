@@ -1,11 +1,11 @@
-About openff-utilities
-======================
+About openff-utilities-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openff-utilities-feedstock/blob/main/LICENSE.txt)
 
 Home: https://openforcefield.org/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openff-utilities-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of miscellaneous utility functions used by experimental OpenFF packages
 
