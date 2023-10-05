@@ -1,5 +1,5 @@
 {% set name = "openff-utilities" %}
-{% set version = "0.1.9" %}
+{% set version = "0.1.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-utilities/archive/v{{ version }}.tar.gz
-  sha256: 57c5e1a1f534dd71dfa9009e0cdfa1cd1c64c6d84737127d652a8c0d82d4c935
+  sha256: 39f27c8b5908ffffb24b561c8b78ea83a80eb8d0362274d551120eed21722493
 
 build:
   noarch: python
@@ -16,7 +16,7 @@ build:
 
 requirements:
   host:
-    - python
+    - python <3.12
     - pip
   run:
     - python >=3.9
