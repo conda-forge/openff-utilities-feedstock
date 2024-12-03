@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-utilities/archive/v{{ version }}.tar.gz
-  sha256: d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
+  sha256: 0b75fe2c99c9bf674a1f33360f018142123eb2930400dfe72f1446588ac0a719
   patches:
     - patches/version-star-import.patch
 
