@@ -1,5 +1,5 @@
 {% set name = "openff-utilities" %}
-{% set version = "0.1.12" %}
+{% set version = "0.1.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openforcefield/openff-utilities/archive/v{{ version }}.tar.gz
-  sha256: c5ba851ec8646bceabc1bda6bec3d74e4863929901257a49b2f9ef98a15a1f7f
+  sha256: 0b75fe2c99c9bf674a1f33360f018142123eb2930400dfe72f1446588ac0a719
   patches:
     - patches/version-star-import.patch
 
@@ -18,13 +18,16 @@ build:
 
 requirements:
   host:
-    - python <3.12
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - importlib_resources
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - openff.utilities
   commands:
