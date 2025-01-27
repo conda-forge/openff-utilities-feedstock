@@ -1,4 +1,4 @@
-{% set org = "openforcefield"  %}
+{% set org = "openforcefield" %}
 {% set name = "openff-utilities" %}
 {% set version = "0.1.14" %}
 
