@@ -3,7 +3,7 @@ schema_version: 1
 context:
   org: openforcefield
   name: openff-utilities
-  version: "0.1.18"
+  version: "0.1.18.post2"
 
 package:
   name: ${{ name }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://github.com/${{ org }}/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: ec51ba7f0923e03a9df29ab70eff801985ce10ad056075f48acf1d290c247616
+  sha256: be05d8f5e8191a9adc41954e511f85272a82dfea88b2ba086dc53fed47a82ed2
 
 build:
   number: 0
